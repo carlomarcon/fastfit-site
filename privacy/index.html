@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy | CG Innovation Srl</title>
+  <meta name="description" content="Informativa sul trattamento dei dati personali relativa al sito web fastfitapp.net di CG Innovation Srl.">
+  <link rel="canonical" href="https://fastfitapp.net/privacy">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="CG Innovation Srl">
+  <meta property="og:title" content="Privacy Policy | CG Innovation Srl">
+  <meta property="og:description" content="Informativa sul trattamento dei dati personali relativa al sito web fastfitapp.net di CG Innovation Srl.">
+  <meta property="og:url" content="https://fastfitapp.net/privacy">
+  <meta property="og:locale" content="it_IT">
+
+  <style>
+    :root {
+      --cream: #F6F3EA;
+      --paper: #FFFFFF;
+      --forest: #2E5B4E;
+      --forest-deep: #1E3A32;
+      --ink: #22302B;
+      --muted: #5C6B64;
+      --sage: #7E9B91;
+      --rule: #DCD6C6;
+      --serif: "Fraunces", Georgia, "Times New Roman", serif;
+      --sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: var(--sans);
+      background: var(--cream);
+      color: var(--ink);
+      line-height: 1.7;
+      font-size: 1.0625rem;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .skip-link {
+      position: absolute;
+      left: -9999px;
+      top: 0;
+      background: var(--forest-deep);
+      color: #fff;
+      padding: 0.6rem 1rem;
+      z-index: 100;
+      border-radius: 0 0 6px 0;
+    }
+    .skip-link:focus { left: 0; }
+
+    a { color: var(--forest); }
+    a:focus-visible {
+      outline: 3px solid var(--forest);
+      outline-offset: 3px;
+      border-radius: 2px;
+    }
+
+    .wrap {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 1.25rem;
+    }
+
+    header.site-header {
+      background: var(--cream);
+      border-bottom: 1px solid var(--rule);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+    }
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.5rem 1.5rem;
+      padding: 0.9rem 0;
+    }
+    .wordmark {
+      font-family: var(--serif);
+      font-weight: 700;
+      font-size: 1.45rem;
+      letter-spacing: -0.01em;
+      color: var(--forest-deep);
+      text-decoration: none;
+    }
+    .wordmark .dot { color: var(--sage); }
+    nav.main-nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.25rem 1.4rem;
+      list-style: none;
+    }
+    nav.main-nav a {
+      text-decoration: none;
+      color: var(--ink);
+      font-size: 0.95rem;
+      font-weight: 500;
+      padding: 0.35rem 0;
+      border-bottom: 2px solid transparent;
+    }
+    nav.main-nav a:hover { border-bottom-color: var(--sage); }
+    nav.main-nav a[aria-current="page"] { border-bottom-color: var(--forest); }
+
+    main { padding: 3.5rem 0 4.5rem; }
+
+    h1 {
+      font-family: var(--serif);
+      font-weight: 600;
+      font-size: clamp(1.9rem, 4.5vw, 2.7rem);
+      line-height: 1.15;
+      letter-spacing: -0.01em;
+      color: var(--forest-deep);
+      margin-bottom: 0.8rem;
+    }
+    .subtitle {
+      font-weight: 600;
+      margin-bottom: 0.3rem;
+    }
+    .updated {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-bottom: 2.6rem;
+    }
+
+    h2 {
+      font-family: var(--serif);
+      font-weight: 600;
+      font-size: 1.45rem;
+      color: var(--forest-deep);
+      margin: 2.6rem 0 0.9rem;
+      padding-top: 1.6rem;
+      border-top: 1px solid var(--rule);
+    }
+    p { margin-bottom: 1rem; max-width: 72ch; }
+    ul { margin: 0 0 1rem 1.4rem; max-width: 72ch; }
+    li { margin-bottom: 0.4rem; }
+    address { font-style: normal; margin-bottom: 1rem; }
+
+    footer.site-footer {
+      background: var(--forest-deep);
+      color: #E8E5DA;
+      padding: 3rem 0 2.2rem;
+      font-size: 0.92rem;
+      line-height: 1.7;
+    }
+    footer.site-footer .footer-brand {
+      font-family: var(--serif);
+      font-weight: 700;
+      font-size: 1.15rem;
+      color: #fff;
+      margin-bottom: 1rem;
+    }
+    footer.site-footer address { font-style: normal; margin-bottom: 1.5rem; }
+    footer.site-footer a { color: #C9DDD4; }
+    footer.site-footer a:hover { color: #fff; }
+    footer.site-footer a:focus-visible { outline-color: #C9DDD4; }
+    .footer-legal {
+      border-top: 1px solid rgba(255,255,255,0.18);
+      padding-top: 1.3rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem 2rem;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    @media (max-width: 640px) {
+      main { padding: 2.6rem 0 3.4rem; }
+      body { font-size: 1rem; }
+      nav.main-nav ul { gap: 0.2rem 1.05rem; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#contenuto">Vai al contenuto</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="wordmark" href="/">FastFit<span class="dot">.</span></a>
+      <nav class="main-nav" aria-label="Navigazione principale">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/#fastfit">FastFit</a></li>
+          <li><a href="/#chi-siamo">Chi siamo</a></li>
+          <li><a href="/#contatti">Contatti</a></li>
+          <li><a href="/privacy/" aria-current="page">Privacy</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenuto">
+    <div class="wrap">
+      <h1>Informativa sul trattamento dei dati personali</h1>
+      <p class="subtitle">Informativa relativa al sito web fastfitapp.net</p>
+      <p class="updated"><strong>Ultimo aggiornamento: 1 agosto 2026</strong></p>
+
+      <h2>1. Titolare del trattamento</h2>
+      <p>Il Titolare del trattamento dei dati personali è:</p>
+      <address>
+        <strong>CG INNOVATION SRL</strong><br>
+        Sede legale: Viale Monte Grappa 16, 42121 Reggio Emilia (RE), Italia<br>
+        Codice fiscale e Partita IVA: 03135650350<br>
+        PEC: <a href="mailto:cginnovation@legalmail.it">cginnovation@legalmail.it</a><br>
+        Email: <a href="mailto:info@fastfitapp.net">info@fastfitapp.net</a>
+      </address>
+
+      <h2>2. Ambito dell&rsquo;informativa</h2>
+      <p>La presente informativa riguarda esclusivamente il sito web <strong>fastfitapp.net</strong>.</p>
+      <p>Non disciplina il trattamento dei dati che sarà effettuato tramite l&rsquo;applicazione FastFit. Prima della pubblicazione dell&rsquo;app verrà predisposta una specifica informativa privacy relativa alle funzionalità e ai dati effettivamente trattati dall&rsquo;applicazione.</p>
+
+      <h2>3. Dati trattati durante la navigazione</h2>
+      <p>Durante la normale navigazione, i sistemi informatici e le procedure software utilizzate per il funzionamento del sito possono acquisire alcuni dati tecnici, come l&rsquo;indirizzo IP, il tipo di browser e dispositivo utilizzato, la data e l&rsquo;ora della visita, le pagine richieste e altri dati necessari alla corretta erogazione e sicurezza del servizio.</p>
+      <p>Tali dati vengono trattati esclusivamente per consentire il funzionamento del sito, garantirne la sicurezza, prevenire abusi e ottenere informazioni tecniche aggregate sul suo utilizzo.</p>
+
+      <h2>4. Dati comunicati volontariamente</h2>
+      <p>L&rsquo;invio volontario di comunicazioni agli indirizzi email presenti sul sito comporta l&rsquo;acquisizione dell&rsquo;indirizzo email del mittente e degli eventuali altri dati personali inseriti nel messaggio.</p>
+      <p>Questi dati vengono utilizzati esclusivamente per ricevere, gestire e rispondere alla richiesta inviata.</p>
+      <p>Si invita l&rsquo;utente a non trasmettere tramite email dati personali non necessari, dati sanitari o altre informazioni particolarmente delicate.</p>
+
+      <h2>5. Finalità e basi giuridiche</h2>
+      <p>I dati possono essere trattati per:</p>
+      <ul>
+        <li>consentire il corretto funzionamento e la sicurezza del sito, sulla base del legittimo interesse del Titolare;</li>
+        <li>rispondere alle richieste ricevute tramite email e adottare eventuali misure precontrattuali richieste dall&rsquo;interessato;</li>
+        <li>adempiere a obblighi previsti dalla legge;</li>
+        <li>accertare, esercitare o difendere un diritto del Titolare.</li>
+      </ul>
+
+      <h2>6. Modalità del trattamento</h2>
+      <p>Il trattamento viene effettuato con strumenti informatici e telematici, adottando misure tecniche e organizzative adeguate a proteggere i dati da accessi non autorizzati, perdita, divulgazione o utilizzo illecito.</p>
+
+      <h2>7. Conservazione dei dati</h2>
+      <p>I dati inviati volontariamente tramite email vengono conservati per il tempo necessario a gestire e rispondere alla richiesta, nonché per eventuali ulteriori periodi richiesti dalla legge o necessari alla tutela dei diritti del Titolare.</p>
+      <p>I dati tecnici e i log di sicurezza vengono conservati per il tempo strettamente necessario al funzionamento, alla manutenzione e alla protezione del sito, secondo le configurazioni applicate dal Titolare e dai fornitori tecnici utilizzati.</p>
+
+      <h2>8. Destinatari e fornitori</h2>
+      <p>I dati possono essere trattati da fornitori che supportano CG Innovation Srl nella gestione dell&rsquo;hosting, del dominio, della sicurezza informatica e della posta elettronica.</p>
+      <p>Tali soggetti operano, quando previsto, quali responsabili del trattamento sulla base di specifici accordi.</p>
+      <p>I dati non vengono venduti né diffusi. Possono essere comunicati ad autorità o altri soggetti nei casi previsti dalla legge.</p>
+
+      <h2>9. Trasferimenti fuori dallo Spazio Economico Europeo</h2>
+      <p>Qualora alcuni fornitori tecnici trattino dati al di fuori dello Spazio Economico Europeo, il trasferimento avverrà nel rispetto delle condizioni e delle garanzie previste dalla normativa applicabile.</p>
+
+      <h2>10. Cookie e strumenti di tracciamento</h2>
+      <p>Il sito è progettato per non utilizzare cookie di profilazione, strumenti pubblicitari o sistemi di tracciamento per finalità di marketing.</p>
+      <p>Possono essere utilizzati esclusivamente cookie tecnici o tecnologie strettamente necessarie al funzionamento e alla sicurezza del sito.</p>
+      <p>Qualora in futuro vengano introdotti strumenti di analisi, contenuti incorporati, servizi di terze parti o cookie non necessari, la presente informativa verrà aggiornata e, quando richiesto, verrà mostrato un sistema per raccogliere il consenso dell&rsquo;utente.</p>
+
+      <h2>11. Diritti dell&rsquo;interessato</h2>
+      <p>Nei casi previsti dalla normativa, l&rsquo;interessato può richiedere:</p>
+      <ul>
+        <li>l&rsquo;accesso ai propri dati personali;</li>
+        <li>la rettifica o l&rsquo;aggiornamento;</li>
+        <li>la cancellazione;</li>
+        <li>la limitazione del trattamento;</li>
+        <li>l&rsquo;opposizione al trattamento;</li>
+        <li>la portabilità dei dati;</li>
+        <li>la revoca del consenso, quando il trattamento si basa sul consenso.</li>
+      </ul>
+      <p>Le richieste possono essere inviate a: <a href="mailto:info@fastfitapp.net">info@fastfitapp.net</a></p>
+      <p>L&rsquo;interessato può inoltre proporre reclamo al Garante per la protezione dei dati personali.</p>
+
+      <h2>12. Modifiche all&rsquo;informativa</h2>
+      <p>CG Innovation Srl può aggiornare la presente informativa in caso di modifiche normative, tecniche o organizzative.</p>
+      <p>La versione aggiornata sarà pubblicata su questa pagina con l&rsquo;indicazione della data dell&rsquo;ultimo aggiornamento.</p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p class="footer-brand">CG INNOVATION SRL</p>
+      <address>
+        Sede legale: Viale Monte Grappa 16, 42121 Reggio Emilia (RE), Italia<br>
+        Codice fiscale e Partita IVA: 03135650350<br>
+        Registro Imprese dell&rsquo;Emilia<br>
+        REA: RE-370849<br>
+        Capitale sociale: &euro; 10.000,00 interamente versato<br>
+        PEC: <a href="mailto:cginnovation@legalmail.it">cginnovation@legalmail.it</a><br>
+        Email: <a href="mailto:info@fastfitapp.net">info@fastfitapp.net</a>
+      </address>
+      <div class="footer-legal">
+        <span>&copy; 2026 CG Innovation Srl. Tutti i diritti riservati.</span>
+        <a href="/privacy/">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

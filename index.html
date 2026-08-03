@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CG Innovation Srl | FastFit</title>
+  <meta name="description" content="CG Innovation Srl sviluppa FastFit, una piattaforma digitale dedicata a nutrizione, allenamento, attività fisica e benessere personale.">
+  <link rel="canonical" href="https://fastfitapp.net/">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="CG Innovation Srl">
+  <meta property="og:title" content="CG Innovation Srl | FastFit">
+  <meta property="og:description" content="CG Innovation Srl sviluppa FastFit, una piattaforma digitale dedicata a nutrizione, allenamento, attività fisica e benessere personale.">
+  <meta property="og:url" content="https://fastfitapp.net/">
+  <meta property="og:locale" content="it_IT">
+
+  <!-- Dati strutturati Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "CG Innovation Srl",
+    "legalName": "CG INNOVATION SRL",
+    "url": "https://fastfitapp.net/",
+    "email": "info@fastfitapp.net",
+    "vatID": "IT03135650350",
+    "taxID": "03135650350",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Viale Monte Grappa 16",
+      "postalCode": "42121",
+      "addressLocality": "Reggio Emilia",
+      "addressRegion": "RE",
+      "addressCountry": "IT"
+    },
+    "brand": {
+      "@type": "Brand",
+      "name": "FastFit"
+    }
+  }
+  </script>
+
+  <style>
+    :root {
+      --cream: #F6F3EA;
+      --paper: #FFFFFF;
+      --forest: #2E5B4E;
+      --forest-deep: #1E3A32;
+      --ink: #22302B;
+      --muted: #5C6B64;
+      --sage: #7E9B91;
+      --amber: #8A6414;
+      --amber-bg: #F4E8CB;
+      --rule: #DCD6C6;
+      --serif: "Fraunces", Georgia, "Times New Roman", serif;
+      --sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+
+    body {
+      font-family: var(--sans);
+      background: var(--cream);
+      color: var(--ink);
+      line-height: 1.65;
+      font-size: 1.0625rem;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .skip-link {
+      position: absolute;
+      left: -9999px;
+      top: 0;
+      background: var(--forest-deep);
+      color: #fff;
+      padding: 0.6rem 1rem;
+      z-index: 100;
+      border-radius: 0 0 6px 0;
+    }
+    .skip-link:focus { left: 0; }
+
+    a { color: var(--forest); }
+    a:focus-visible,
+    button:focus-visible {
+      outline: 3px solid var(--forest);
+      outline-offset: 3px;
+      border-radius: 2px;
+    }
+
+    .wrap {
+      max-width: 1040px;
+      margin: 0 auto;
+      padding: 0 1.25rem;
+    }
+
+    /* ---------- Header ---------- */
+    header.site-header {
+      background: var(--cream);
+      border-bottom: 1px solid var(--rule);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+    }
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.5rem 1.5rem;
+      padding: 0.9rem 0;
+    }
+    .wordmark {
+      font-family: var(--serif);
+      font-weight: 700;
+      font-size: 1.45rem;
+      letter-spacing: -0.01em;
+      color: var(--forest-deep);
+      text-decoration: none;
+    }
+    .wordmark .dot { color: var(--sage); }
+    nav.main-nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.25rem 1.4rem;
+      list-style: none;
+    }
+    nav.main-nav a {
+      text-decoration: none;
+      color: var(--ink);
+      font-size: 0.95rem;
+      font-weight: 500;
+      padding: 0.35rem 0;
+      border-bottom: 2px solid transparent;
+    }
+    nav.main-nav a:hover { border-bottom-color: var(--sage); }
+
+    /* ---------- Hero ---------- */
+    .hero {
+      padding: 5rem 0 4.5rem;
+      border-bottom: 1px solid var(--rule);
+    }
+    .eyebrow {
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--forest);
+      margin-bottom: 1rem;
+    }
+    .hero h1 {
+      font-family: var(--serif);
+      font-weight: 600;
+      font-size: clamp(2.1rem, 5.5vw, 3.4rem);
+      line-height: 1.12;
+      letter-spacing: -0.015em;
+      color: var(--forest-deep);
+      max-width: 18ch;
+      margin-bottom: 1.6rem;
+    }
+    .hero p {
+      max-width: 62ch;
+      margin-bottom: 1rem;
+      color: var(--ink);
+    }
+    .cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      margin-top: 2rem;
+    }
+    .btn {
+      display: inline-block;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.98rem;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      border: 1.5px solid var(--forest);
+    }
+    .btn-primary {
+      background: var(--forest);
+      color: #fff;
+    }
+    .btn-primary:hover { background: var(--forest-deep); border-color: var(--forest-deep); }
+    .btn-secondary {
+      background: transparent;
+      color: var(--forest);
+    }
+    .btn-secondary:hover { background: rgba(46, 91, 78, 0.08); }
+
+    /* ---------- Sezioni ---------- */
+    section.block {
+      padding: 4rem 0;
+      border-bottom: 1px solid var(--rule);
+    }
+    section.block h2 {
+      font-family: var(--serif);
+      font-weight: 600;
+      font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+      line-height: 1.2;
+      color: var(--forest-deep);
+      margin-bottom: 1.4rem;
+    }
+    section.block p {
+      max-width: 68ch;
+      margin-bottom: 1rem;
+    }
+    section.block p:last-child { margin-bottom: 0; }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--amber-bg);
+      color: var(--amber);
+      border: 1px solid #E3D3A6;
+      font-weight: 600;
+      font-size: 0.88rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 0.4rem 0.9rem;
+      border-radius: 999px;
+      margin-bottom: 1.4rem;
+    }
+    .badge::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--amber);
+    }
+
+    .contact-email {
+      font-family: var(--serif);
+      font-size: 1.3rem;
+      color: var(--forest-deep);
+      display: inline-block;
+      margin: 0.4rem 0 1.4rem;
+      word-break: break-all;
+    }
+
+    /* ---------- Footer ---------- */
+    footer.site-footer {
+      background: var(--forest-deep);
+      color: #E8E5DA;
+      padding: 3rem 0 2.2rem;
+      font-size: 0.92rem;
+      line-height: 1.7;
+    }
+    footer.site-footer .footer-brand {
+      font-family: var(--serif);
+      font-weight: 700;
+      font-size: 1.15rem;
+      color: #fff;
+      margin-bottom: 1rem;
+    }
+    footer.site-footer address {
+      font-style: normal;
+      margin-bottom: 1.5rem;
+    }
+    footer.site-footer a { color: #C9DDD4; }
+    footer.site-footer a:hover { color: #fff; }
+    footer.site-footer a:focus-visible { outline-color: #C9DDD4; }
+    .footer-legal {
+      border-top: 1px solid rgba(255,255,255,0.18);
+      padding-top: 1.3rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem 2rem;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    @media (max-width: 640px) {
+      .hero { padding: 3.4rem 0 3.2rem; }
+      section.block { padding: 3rem 0; }
+      nav.main-nav ul { gap: 0.2rem 1.05rem; }
+      body { font-size: 1rem; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#contenuto">Vai al contenuto</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="wordmark" href="/">FastFit<span class="dot">.</span></a>
+      <nav class="main-nav" aria-label="Navigazione principale">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="#fastfit">FastFit</a></li>
+          <li><a href="#chi-siamo">Chi siamo</a></li>
+          <li><a href="#contatti">Contatti</a></li>
+          <li><a href="/privacy/">Privacy</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenuto">
+
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="titolo-hero">
+      <div class="wrap">
+        <p class="eyebrow">CG Innovation Srl</p>
+        <h1 id="titolo-hero">Tecnologia e innovazione al servizio del benessere</h1>
+        <p><strong>CG Innovation Srl sviluppa soluzioni digitali dedicate al mondo della nutrizione, dell&rsquo;attività fisica, dell&rsquo;allenamento e del benessere personale.</strong></p>
+        <p><strong>Il nostro progetto principale è FastFit, una piattaforma pensata per rendere più semplice, organizzata e personalizzata la gestione del proprio percorso quotidiano.</strong></p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#fastfit">Scopri FastFit</a>
+          <a class="btn btn-secondary" href="mailto:info@fastfitapp.net">Contattaci</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FASTFIT -->
+    <section class="block" id="fastfit" aria-labelledby="titolo-fastfit">
+      <div class="wrap">
+        <h2 id="titolo-fastfit">Il progetto FastFit</h2>
+        <p><strong>FastFit è una piattaforma digitale in fase di sviluppo che nasce con l&rsquo;obiettivo di riunire in un&rsquo;unica esperienza strumenti dedicati alla nutrizione, all&rsquo;attività fisica, all&rsquo;allenamento e al benessere personale.</strong></p>
+        <p><strong>Il progetto è pensato per aiutare l&rsquo;utente a organizzare e monitorare il proprio percorso attraverso un&rsquo;esperienza semplice, personalizzata e accessibile direttamente da smartphone.</strong></p>
+        <p><strong>La piattaforma utilizzerà software avanzati, sistemi di analisi dei dati e soluzioni di intelligenza artificiale integrate con protocolli strutturati sviluppati con il supporto di professionisti qualificati.</strong></p>
+        <p><strong>Le funzionalità definitive e le relative modalità di utilizzo saranno comunicate in occasione del lancio ufficiale.</strong></p>
+      </div>
+    </section>
+
+    <!-- STATO DEL PROGETTO -->
+    <section class="block" id="stato" aria-labelledby="titolo-stato">
+      <div class="wrap">
+        <p class="badge">In sviluppo</p>
+        <h2 id="titolo-stato">Attualmente in fase di sviluppo</h2>
+        <p><strong>FastFit è attualmente in fase di sviluppo e non è ancora disponibile al pubblico.</strong></p>
+        <p><strong>L&rsquo;applicazione sarà pubblicata prossimamente per dispositivi iOS e Android.</strong></p>
+      </div>
+    </section>
+
+    <!-- CHI SIAMO -->
+    <section class="block" id="chi-siamo" aria-labelledby="titolo-chi-siamo">
+      <div class="wrap">
+        <h2 id="titolo-chi-siamo">Chi siamo</h2>
+        <p><strong>CG Innovation Srl è una start-up innovativa italiana attiva nello sviluppo di software, piattaforme digitali e soluzioni tecnologiche ad alto valore innovativo.</strong></p>
+        <p><strong>La società sviluppa progetti dedicati alla gestione personalizzata del benessere, con particolare attenzione alla nutrizione, all&rsquo;attività fisica, all&rsquo;allenamento e allo stile di vita sano.</strong></p>
+        <p><strong>Attraverso FastFit vogliamo creare uno strumento moderno e completo, capace di integrare tecnologia, organizzazione e supporto quotidiano in un&rsquo;unica esperienza digitale.</strong></p>
+      </div>
+    </section>
+
+    <!-- CONTATTI -->
+    <section class="block" id="contatti" aria-labelledby="titolo-contatti">
+      <div class="wrap">
+        <h2 id="titolo-contatti">Contatti</h2>
+        <p><strong>Per informazioni su CG Innovation Srl o sul progetto FastFit puoi contattarci all&rsquo;indirizzo:</strong></p>
+        <a class="contact-email" href="mailto:info@fastfitapp.net">info@fastfitapp.net</a>
+        <div class="cta-row" style="margin-top: 0;">
+          <a class="btn btn-primary" href="mailto:info@fastfitapp.net">Scrivici</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p class="footer-brand">CG INNOVATION SRL</p>
+      <address>
+        Sede legale: Viale Monte Grappa 16, 42121 Reggio Emilia (RE), Italia<br>
+        Codice fiscale e Partita IVA: 03135650350<br>
+        Registro Imprese dell&rsquo;Emilia<br>
+        REA: RE-370849<br>
+        Capitale sociale: &euro; 10.000,00 interamente versato<br>
+        PEC: <a href="mailto:cginnovation@legalmail.it">cginnovation@legalmail.it</a><br>
+        Email: <a href="mailto:info@fastfitapp.net">info@fastfitapp.net</a>
+      </address>
+      <div class="footer-legal">
+        <span>&copy; 2026 CG Innovation Srl. Tutti i diritti riservati.</span>
+        <a href="/privacy/">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
