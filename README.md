@@ -1,14 +1,14 @@
 # Sito istituzionale CG Innovation Srl / FastFit
 
-Sito statico per `https://fastfitapp.net`. Nessun backend, nessuna build, nessuna dipendenza: solo file HTML/SVG/XML/TXT pronti per la pubblicazione.
+Sito statico per `https://fastfitcg.net`. Nessun backend, nessuna build, nessuna dipendenza: solo file HTML/SVG/XML/TXT pronti per la pubblicazione.
 
 ## Struttura dei file
 
 ```
 fastfit-site/
-├── index.html            → homepage (https://fastfitapp.net/)
+├── index.html            → homepage (https://fastfitcg.net/)
 ├── privacy/
-│   └── index.html        → privacy policy (https://fastfitapp.net/privacy)
+│   └── index.html        → privacy policy (https://fastfitcg.net/privacy)
 ├── 404.html              → pagina non trovata
 ├── favicon.svg           → favicon PROVVISORIA (wordmark testuale "F")
 ├── robots.txt
@@ -35,13 +35,13 @@ Poi apri `http://localhost:8080` e `http://localhost:8080/privacy/`.
 
 Alternative equivalenti (stessa logica "cartella statica, nessuna build"): Netlify, Vercel, GitHub Pages.
 
-## Collegare il dominio fastfitapp.net
+## Collegare il dominio fastfitcg.net
 
 Con Cloudflare Pages:
 
-1. Nel progetto Pages: **Custom domains → Set up a custom domain** → `fastfitapp.net`.
+1. Nel progetto Pages: **Custom domains → Set up a custom domain** → `fastfitcg.net`.
 2. Se il DNS del dominio è già su Cloudflare, il record viene creato in automatico; altrimenti aggiungi il record CNAME indicato presso il tuo registrar.
-3. Aggiungi anche `www.fastfitapp.net` come secondo custom domain, poi crea una **Redirect Rule** (o Bulk Redirect) da `www.fastfitapp.net/*` a `https://fastfitapp.net/$1` (301).
+3. Aggiungi anche `www.fastfitcg.net` come secondo custom domain, poi crea una **Redirect Rule** (o Bulk Redirect) da `www.fastfitcg.net/*` a `https://fastfitcg.net/$1` (301).
 4. Il certificato HTTPS viene emesso automaticamente; il redirect HTTP→HTTPS è attivo di default (verifica in **SSL/TLS → Edge Certificates → Always Use HTTPS**).
 
 Header di sicurezza consigliati (opzionali, via file `_headers` su Pages/Netlify):
@@ -65,12 +65,12 @@ Header di sicurezza consigliati (opzionali, via file `_headers` su Pages/Netlify
 
 - **Logo ufficiale FastFit**: al momento è usato un wordmark testuale nell'header (`.wordmark` in `index.html`, `privacy/index.html`, `404.html`). Quando il logo è pronto, sostituisci il tag `<a class="wordmark">` con un `<img>` con `alt="FastFit"`.
 - **Favicon ufficiale**: `favicon.svg` è un segnaposto testuale ("F" su verde bosco). Sostituiscila con la versione ufficiale mantenendo lo stesso nome file (o aggiorna i `<link rel="icon">`).
-- **Immagine Open Graph** (`og:image`): non inclusa perché non esiste un asset ufficiale; quando disponibile, aggiungi `<meta property="og:image" content="https://fastfitapp.net/og.png">` alle due pagine.
+- **Immagine Open Graph** (`og:image`): non inclusa perché non esiste un asset ufficiale; quando disponibile, aggiungi `<meta property="og:image" content="https://fastfitcg.net/og.png">` alle due pagine.
 
 ## Checklist post-deploy
 
-- [ ] `https://fastfitapp.net` raggiungibile con certificato valido
-- [ ] `https://fastfitapp.net/privacy` funzionante
+- [ ] `https://fastfitcg.net` raggiungibile con certificato valido
+- [ ] `https://fastfitcg.net/privacy` funzionante
 - [ ] Redirect `www` → apex e HTTP → HTTPS attivi
 - [ ] `robots.txt` e `sitemap.xml` raggiungibili
 - [ ] Nessun errore in console (verificato in locale: zero JS, zero richieste esterne)

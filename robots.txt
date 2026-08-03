@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://fastfitapp.net/sitemap.xml
+Sitemap: https://fastfitcg.net/sitemap.xml
